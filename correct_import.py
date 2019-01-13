@@ -81,7 +81,72 @@ def check_moves(file, prev_line):
     if prev_line[:3] != '1. ':
         raise_error(prev_line, """Bad start of first move (should start with 1. )""")
     for row in file:
-        pass
+        # ignore new lines
+        if row == '\n':
+            continue
+
+        '''
+        Divide whole row by each move, and validate individual parts till number
+        by check_move
+        '''
+
+        k = 0  # index of previous start of move
+        s = 0  # get correct slice of number if the move number had more digits
+        correct_move_num = 1
+        # if it's half move without number
+        if not row[0].isdigit():
+            for i in range(len(row)):
+                if row[i] == ' ':
+                    if not is_move(row[0:i+1]):
+                        raise_error(row, "bad move")
+                    break
+
+        # send each move to is_move to validate
+        for i in range(len(row)-1):
+            while row[i].isdigit():
+                if row[i+1] == '.':
+                    if row[k-s:i-s] != '':
+                        if not is_move(row[k-s:i-s], correct_move_num):
+                            raise_error(row, "bad move")
+                        correct_move_num += 1
+
+                    k = i
+                    s = 0
+                    break
+                elif row[i+1].isdigit():
+                    i += 1
+                    s += 1
+                else:
+                    break
+
+            # add last move
+            if i == len(row) - 2:
+                is_move(row[k-1:i+1])
+
+def is_move(move, n):
+    '''
+    move - chess move with number and space in the end e.g (1. e4 e5 )
+    n - correct number of move
+
+    return True - correct move
+           False - raise error - bad move
+    '''
+    # be careful, before move 9 is space
+    print(repr(move))
+    n += 3
+    # delete first space
+    if move[1] == '9' or move[1:3] == '99':
+        move = move[1:]
+    if move[0] == ' ':
+        return False
+
+    if move[0].isdigit():
+        # !do the try catch
+        return
+
+    return True
+
+
 
 def raise_error(row, message):
     print(row)
