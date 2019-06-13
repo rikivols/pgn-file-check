@@ -1,0 +1,17 @@
+[Event "Earl tourn"]
+[Site "?"]
+[Date "1906.??.??"]
+[Round "?"]
+[White "Alekhine, Alexander"]
+[Black "Ljubimov, T."]
+[Result "1-0"]
+[WhiteElo ""]
+[BlackElo ""]
+[ECO "C58"]
+
+1.e4 e5 2.Nf3 Nc6 3.Bc4 Nf6 4.Ng5 d5 5.exd5 Na5 6.Bb5+ c6 7.dxc6 bxc6 8.Qf3 Qc7
+9.Bd3 h6 10.Ne4 Nd5 11.Ng3 g6 12.Nc3 Be7 13.Nxd5 cxd5 14.Bb5+ Kf8 15.O-O Bb7
+16.Qe2 h5 17.Re1 f6 18.d4 e4 19.Bd2 a6 20.Ba4 Nc4 21.Bb3 Nxd2 22.Qxd2 a5
+23.a3 Bd6 24.Nf1 Kg7 25.h4 Bf4 26.Ne3 g5 27.hxg5 fxg5 28.Bxd5 Bxd5 29.Nxd5 Bxd2
+30.Nxc7 Rac8 31.Re2 Bc3 32.Ne6+ Kf6 33.bxc3 Kxe6 34.Rxe4+ Kd5 35.Re3 Rhe8
+36.Rae1 Rxe3 37.Rxe3 Kc4 38.Re5  1-0
