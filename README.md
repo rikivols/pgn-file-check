@@ -1,8 +1,8 @@
 ![Drag Racing](img/pgn.jpg)
 
-# Pgn Check Repair
+# Pgn File Check
 
-### What does pgn check repair do?:
+### What does pgn file check do?:
 As the name states, program checks prn chess file format and finds errors. It does not repair 
 files yet. Program is very fast, and can take thousands of pgn files at once. 
 
@@ -15,7 +15,7 @@ gives informations about the error.
 
 ---
 
-### Why use pgn check repair?
+### Why use Pgn File Check?
 Pgn is the most used format to store chess games. There are tools to play the game on 
 a chessboard, analyze the game with computer, but what about checking if the pgn 
 file contains errors? What about repairing those errors? 
@@ -27,7 +27,7 @@ syntax, and this program aims to locate those errors.
 
 ---
 
-### How to use pgn check repair?
+### How to use Pgn File Check?
 Script is called from console with calling main function.
 
 Calling with no arguments:
